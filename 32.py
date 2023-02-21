@@ -10,7 +10,7 @@ list = [randint(0,100) for _ in range(n)]
 res = []
 
 for i in range(len(list)):
-    if list[i] >= defmin and list[i] <= defmax:
+    if defmin <= list[i] <= defmax:
         res.append(i)
 
 print(list)
